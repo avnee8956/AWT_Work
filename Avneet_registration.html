@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UPSC Preparation Registration</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+<div style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); width: 400px;">
+  <h2 style="text-align: center; margin-bottom: 20px;">UPSC Preparation Registration</h2>
+  <form style="display: flex; flex-direction: column;">
+    <label for="fullname" style="margin-bottom: 8px;">Full Name:</label>
+    <input type="text" placeholder="Enter your fullname" id="fullname" name="fullname"pattern="^[A-Za-z]+$"  style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 12px;">
+    
+    <label for="email" style="margin-bottom: 8px;">Email:</label>
+    <input type="email"placeholder ="Enter valid email" id="email" name="email" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 12px;">
+    
+    <label for="username" style="margin-bottom: 8px;">Username:</label>
+    <input type="text" placeholder="Enter the username" id="username" name="username" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 12px;">
+    
+    <label for="password" style="margin-bottom: 8px;">Password:</label>
+    <input type="password" placeholder="Enter the password" id="password" name="password" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 12px;">
+    
+    <label for="access-level" style="margin-bottom: 8px;">Access Level:</label>
+    <select id="access-level" name="access-level" style="padding: 6px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 20px;">
+      <option value="read-only">Read Only</option>
+      <option value="compulsory">Compulsory</option>
+      <option value="read-write">Read and Write</option>
+    </select>
+    
+    <button type="submit" style="background-color: #007bff; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer;">Register</button>
+  </form>
+</div>
+
+</body>
+</html>

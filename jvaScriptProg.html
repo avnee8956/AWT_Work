@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci and Factorial Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .input-container {
+            margin: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fibonacci and Factorial Calculator</h1>
+
+    <div class="input-container">
+        <input type="text" id="userInput" placeholder="Enter your number">
+        <button id="fibonacciButton">Fibonacci</button>
+        <button id="factorialButton">Factorial</button>
+    </div>
+
+    <script>
+        // Function to calculate factorial
+        function calculateFactorial(n) {
+            let factorial = 1;
+            for (let i = 1; i <= n; i++) {
+                factorial *= i;
+            }
+            return factorial;
+        }
+
+        // Function to generate Fibonacci series
+        function generateFibonacci(n) {
+            let fibonacciSeries = [];
+            let a = 0, b = 1;
+
+            for (let i = 0; i < n; i++) {
+                fibonacciSeries.push(a);
+                let temp = a + b;
+                a = b;
+                b = temp;
+            }
+
+            return fibonacciSeries;
+        }
+
+        // Event listener for Fibonacci button
+        document.getElementById('fibonacciButton').addEventListener('click', function () {
+            const userInput = document.getElementById('userInput').value;
+            const numFibonacci = parseInt(userInput);
+
+            if (!isNaN(numFibonacci)) {
+                const fibonacciSeries = generateFibonacci(numFibonacci);
+                alert(`The Fibonacci series with ${numFibonacci} elements is: ${fibonacciSeries.join(', ')}`);
+            } else {
+                alert("Invalid input. Please enter a valid number.");
+            }
+        });
+
+        // Event listener for Factorial button
+        document.getElementById('factorialButton').addEventListener('click', function () {
+            const userInput = document.getElementById('userInput').value;
+            const numFactorial = (userInput);
+
+            if (!isNaN(numFactorial)) {
+                const factorialResult = calculateFactorial(numFactorial);
+                alert(`The factorial of ${numFactorial} is ${factorialResult}`);
+            } else {
+                alert("Invalid input. Please enter a valid number.");
+            }
+        });
+    </script>
+</body>
+</html>

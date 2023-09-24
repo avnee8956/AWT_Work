@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE University SYSTEM "University.dtd">
+
+<University>
+    <!-- Information about the University -->
+    <Name>Amity University</Name>
+    <Location>Noida</Location>
+    <EstablishedYear>2004</EstablishedYear>
+
+    <!-- List of Departments -->
+    <Departments>
+        <Department>
+            <Name>AIIT</Name>
+            <HeadOfDepartment>Dr. Rekha Agarwal</HeadOfDepartment>
+            <Courses>
+                <Course>
+                    <Code>CS101</Code>
+                    <Title>Advance Web Technology</Title>
+                    <Credits>3</Credits>
+                </Course>
+                <Course>
+                    <Code>CS201</Code>
+                    <Title>Data Structures and Algorithms</Title>
+                    <Credits>4</Credits>
+                </Course>
+            </Courses>
+        </Department>
+        <Department>
+            <Name>Physics</Name>
+            <HeadOfDepartment>Dr. Mary Johnson</HeadOfDepartment>
+            <Courses>
+                <Course>
+                    <Code>PH101</Code>
+                    <Title>Physics 101</Title>
+                    <Credits>3</Credits>
+                </Course>
+            </Courses>
+        </Department>
+    </Departments>
+
+    <!-- List of Students -->
+    <Students>
+        <Student>
+            <ID>101</ID>
+            <FirstName>Avneet</FirstName>
+            <LastName>Gupta</LastName>
+            <Department>AIIT</Department>
+        </Student>
+        <Student>
+            <ID>102</ID>
+            <FirstName>Jane</FirstName>
+            <LastName>Smith</LastName>
+            <Department>Physics</Department>
+        </Student>
+    </Students>
+</University>

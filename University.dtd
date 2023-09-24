@@ -1,0 +1,20 @@
+<!-- University.dtd -->
+<!ELEMENT University (Name, Location, EstablishedYear, Departments, Students)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Location (#PCDATA)>
+<!ELEMENT EstablishedYear (#PCDATA)>
+<!ELEMENT Departments (Department+)>
+<!ELEMENT Department (Name, HeadOfDepartment, Courses)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT HeadOfDepartment (#PCDATA)>
+<!ELEMENT Courses (Course+)>
+<!ELEMENT Course (Code, Title, Credits)>
+<!ELEMENT Code (#PCDATA)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Credits (#PCDATA)>
+<!ELEMENT Students (Student+)>
+<!ELEMENT Student (ID, FirstName, LastName, Department)>
+<!ELEMENT ID (#PCDATA)>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT Department (#PCDATA)>

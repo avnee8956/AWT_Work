@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Demonstration</title>
+</head>
+<body>
+    <h1>Event Demonstration</h1>
+    <label for="demoInput">Enter Text:</label>
+    <input type="text" id="demoInput">
+    <p id="output">This is a paragraph.</p>
+
+    <script>
+        const inputElement = document.getElementById('demoInput');
+        const outputElement = document.getElementById('output');
+
+        // onblur() event
+        inputElement.onblur = function () {
+            outputElement.textContent = 'Input field lost focus.';
+        };
+
+        // onmouseover() event
+        inputElement.onmouseover = function () {
+            outputElement.textContent = 'Mouse over the input field.';
+        };
+
+        // onchange() event
+        inputElement.onchange = function () {
+            outputElement.textContent = 'Input value changed.';
+        };
+
+        // onmouseout() event
+        inputElement.onmouseout = function () {
+            outputElement.textContent = 'Mouse out of the input field.';
+        };
+    </script>
+</body>
+</html>
